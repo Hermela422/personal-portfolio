@@ -2,108 +2,69 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background: #FAF3F0; /* Soft blush pink */
-    color: #333333; /* Dark charcoal text */
 }
 
-/* Header */
-header {
-    background: #000000; /* Black header */
-    color: #FFC0CB; /* Pink text for contrast */
-    padding: 20px;
+/* Home Section with Background Image */
+#home {
+    position: relative;
+    height: 100vh;
+    background: url('photo_2025-03-26_11-57-53.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
-    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Small Profile Image in Top Left */
+.profile-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+/* Navigation Bar */
+.navbar-brand {
     font-weight: bold;
-    letter-spacing: 1px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #FFC0CB; /* Pink accent color */
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    color: #FF69B4; /* Brighter pink on hover */
 }
 
 /* About Me Section */
 .about-me {
-    background: #333333; /* Dark charcoal */
-    color: #FFC0CB; /* Pink text for contrast */
+    background: #333;
+    color: #FFC0CB;
     padding: 50px;
     text-align: center;
-    font-size: 18px;
     border-radius: 10px;
     margin: 30px auto;
     width: 80%;
-    box-shadow: 0 4px 10px rgba(51, 51, 51, 0.1); /* Subtle shadow */
 }
 
-/* Projects Section */
-section {
-    padding: 40px;
-    text-align: center;
+/* Project Cards */
+
+
+.card {
+    border: none;
+    background: #FFC0CB;
+    color: #333;
+    transition: transform 0.3s;
 }
 
-.project {
-    background: #FFC0CB; /* Pink for a clean look */
-    padding: 20px;
-    margin: 20px auto;
-    width: 50%;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft black shadow */
-    transition: transform 0.3s ease-in-out;
-    color: #333333; /* Dark charcoal text */
-}
-
-.project:hover {
-    transform: translateY(-5px); /* Subtle hover effect */
-}
-
-/* Contact Section */
-.contact {
-    background: #000000; /* Black background */
-    color: #FFC0CB; /* Pink text for clarity */
-    padding: 50px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 10px;
-    margin: 30px auto;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.contact a {
-    color: #FF69B4; /* Brighter pink for links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-}
-
-.contact a:hover {
-    color: #FAF3F0; /* Soft blush pink on hover */
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* Footer */
 footer {
-    background: #333333; /* Dark charcoal footer */
+    background: #333;
     color: white;
     text-align: center;
     padding: 15px;
-    position: relative;
-    bottom: 0;
     width: 100%;
     font-size: 14px;
 }
