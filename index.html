@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,47 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .card-img-top{
+            
+        }
+    </style>
+    </head>
 <body>
 
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Small Profile Image in Top Left -->
+    <img src="photo_2025-03-26_11-57-53.jpg" alt="Profile Picture" class="profile-img">
 
-    <section id="about" class="about-me">
-        <h2>About Me</h2>
-        <p>Hello! I'm Hermela, a third-year computer science student at ACT with a strong passion for technology, problem-solving, and innovation. Ever since I wrote my first lines of code, I have been fascinated by how software can shape the world. My academic journey has introduced me to various programming languages, algorithms, and technologies that fuel my curiosity and drive to learn more.</p>
-        <p>I enjoy working on projects that challenge me to think critically and creatively. From developing web applications to exploring artificial intelligence and data structures, I am always eager to expand my skill set. I have also participated in coding competitions and hackathons, which have enhanced my ability to collaborate and solve real-world problems efficiently.</p>
-        <p>Beyond academics, I am always looking for opportunities to grow—whether through internships, open-source contributions, or personal projects. My goal is to build innovative solutions that make a difference in people’s lives. I am excited about the future of technology and how I can contribute to it.</p>
-    </section>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hermela's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <p>Calculator</p>
-            <p>Ping pong</p>
-            <p>Snake game</p>
-            <p>An event organizer website</p>
-            <p>To-do list App</p>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container text-center">
+            <h1 class="display-4 text-white">Welcome to My Portfolio</h1>
+            <p class="lead text-white">Explore my work and projects!</p>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: hermelae@gmail.com</p>
-        <p>Other social media: <a href="#">Instagram</a> (@hermi)</p>
+    <!-- About Me Section -->
+    <section id="about" class="about-me">
+        <h2>About Me</h2>Hi! I’m Hermela, a third-year Computer Science student at ACT with a strong passion for technology, problem-solving, and innovation. Ever since I started coding, I’ve been fascinated by how software can simplify complex problems and create meaningful solutions.
+
+    </p>
+        <p>Throughout my studies, I’ve gained hands-on experience with programming languages, data structures, and web development. I enjoy building projects that challenge me to think critically and push my creativity. From developing web applications to exploring artificial intelligence, I’m always eager to learn and experiment with new technologies.
+
+        </p>
+        <p>In addition to coursework, I’ve taken part in coding competitions and hackathons, which have sharpened my ability to tackle real-world problems efficiently. Beyond academics, I’m actively looking for opportunities to collaborate, intern, and contribute to open-source projects to expand my skill set.
+
+            <p>My ultimate goal is to use technology to develop impactful and innovative solutions. As I continue to grow in this field, I’m excited about the endless possibilities that lie ahead!
+        </p>
     </section>
 
-    <footer>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row mb-5 py-5">
+                <!-- Calculator -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card mb-2" style="width: 300px;">
+                            <img src="IMG_5658.PNG" class="card-img-top" style="height: 200px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Calculator</h5>
+                                <p class="card-text">A functional calculator with a user-friendly UI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card shadow-sm ">
+                        <div class="card" style="width: 300px;">
+                            <img src="photo_2025-03-27_11-11-12.jpg" class="card-img-top" style="height: 200px;"  alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Ping Pong</h5>
+                                <p class="card-text">A classic two-player ping pong game</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card" style="width: 300px;">
+                            <img src="IMG_5659.PNG" class="card-img-top" style="height: 200px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">ACT clone</h5>
+                                <p class="card-text"> act</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card" style="width: 300px;">
+                            <img src="photo_2025-03-27_11-11-27.jpg" class="card-img-top" style="height: 200px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Event Organizer</h5>
+                                <p class="card-text">an event</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- To-Do List App -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card" style="width: 300px;">
+                            <img src="IMG_5660.PNG" class="card-img-top" style="height: 200px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">To do list</h5>
+                                <p class="card-text">to.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <div class="card" style="width: 300px;">
+                            <img src="IMG_5661.PNG" class="card-img-top" style="height: 200px;" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Registeral form</h5>
+                                <p class="card-text">reg.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center py-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="mb-4">Contact</h2>
+            <p>Email: <a href="mailto:hermelae@gmail.com" class="text-light">hermelae@gmail.com</a></p>
+            <p>Other social media: <a href="#" class="text-light">@hermi (Instagram)</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-center text-white py-3">
         <p>&copy; 2025 Hermela</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
